@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="delivery-banner">
+      <p>Бесплатная доставка от 1000 ₽</p>
+      <span class="delivery-close">✖</span>
+    </div>
+
+    <header class="header">
+      <div class="container header__container">
+              <a href="./"><img src="./images/Logo.png" alt="logo" /> </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Зоны доставки</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__right">
+        <div class="header__contact">
+          <a href="tel:+01234567890" class="phone">+0 (123) 456 78-90</a>
+          <p class="time">Прием заказов с 10:00 до 22:40</p>
+        </div>
+         <div class="header__buttons">
+            <button class="header__btn">
+              <img src="./images/user.png" alt="Личный кабинет" />
+            </button>
+            <button class="header__btn">
+              <img src="./images/cart.png" alt="Корзина" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+       <!-- Секция меню -->
+      <section class="menu">
+        <div class="container">
+          <h1 class="menu__title">Меню</h1>
+
+          <div class="menu__grid">
+            <a href="#" class="menu__card">
+              <img src="./images/pizza.png" alt="pizza" />
+              <span class="menu__overlay" aria-hidden="true"></span>
+              <span class="menu__label">Пицца</span>
+            </a>
+            <a href="#" class="menu__card">
+              <img src="./images/soups.png" alt="soups" />
+              <span class="menu__overlay" aria-hidden="true"></span>
+              <span class="menu__label">Супы</span>
+            </a>
+            <a href="#" class="menu__card">
+              <img src="./images/hot_dishes.png" alt="hot_dishes" />
+              <span class="menu__overlay" aria-hidden="true"></span>
+              <span class="menu__label">Горячие блюда</span>
+            </a>
+            <a href="#" class="menu__card">
+              <img src="./images/salads.png" alt="salads" />
+              <span class="menu__overlay" aria-hidden="true"></span>
+              <span class="menu__label">Салаты</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция Новинки -->
+      <section class="section new">
+        <div class="container">
+          <h2 class="section__title">Новинки</h2>
+          <ul class="cards">
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/chinese_soup.png" alt="сhinese_soup" />
+                <h3 class="card__title">Китайский яичный суп</h3>
+                <p class="card__desc">
+                  Традиционный китайский суп с яйцом и томатами черри
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">350 ₽</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/paelia.png" alt="paelia" />
+                <h3 class="card__title">Паэлья</h3>
+                <p class="card__desc">
+                  Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">660 ₽</button>
+              </div>
+            </li>
+            
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/beef_bourguignon.png" alt="beef_bourguignon" />
+                <h3 class="card__title">Биф Бургеньон</h3>
+                <p class="card__desc">
+                  Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">630 ₽</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/broken_cucumbers.png" alt="broken_cucumbers" />
+                <h3 class="card__title">Битые огурцы</h3>
+                <p class="card__desc">
+                  Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">320 ₽</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <!-- Секция Популярное -->
+      <section class="section popular">
+        <div class="container">
+          <h2 class="section__title">Популярное</h2>
+          <ul class="cards">
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/pepperoni.png" alt="pepperoni" />
+                <h3 class="card__title">Пепперони</h3>
+                <p class="card__desc">
+                  Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">660 ₽</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/gorgonzola_pear.png" alt="gorgonzola_pear" />
+                <h3 class="card__title">Груша Горгонзола</h3>
+                <p class="card__desc">
+                  Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">780 ₽</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/pho_bo.png" alt="pho_bo" />
+                <h3 class="card__title">Фо Бо</h3>
+                <p class="card__desc">
+                  Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">490 ₽</button>
+              </div>
+            </li>
+
+            <li class="card">
+              <a href="#" class="menu__card">
+                <img src="./images/tom_jam.png" alt="tom_jam" />
+                <h3 class="card__title">Том Ям с морепродуктами</h3>
+                <p class="card__desc">
+                  Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом
+                </p>
+              </a>  
+              <div class="card__footer">
+                <button class="card__btn">590 ₽</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секция Акции -->
+      <section class="section stocks">
+        <div class="container">
+          <h2 class="section__title">Акции</h2>
+          <ul class="cards__style-2">
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Platina.png" alt="Platina" />
+                <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">Скидка 10%</span>
+                    </div>
+                </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">Статус «Platina» привилегированным клиентам</span>
+              </a>
+            </li>
+
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Discount_on_all_purchases.png" alt="Discount on all purchases" />
+                <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">Скидка 5%</span>
+                    </div>
+                </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">Скидка на все покупки при регистрации</span>
+              </a>  
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секция События -->
+      <section class="section events">
+        <div class="container">
+          <h2 class="section__title">События</h2>
+          <ul class="cards_events">
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Stand-Up.png" alt="Stand-Up" />
+                  <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">27 января</span>
+                      <span class="badge dark">В 21:00</span>
+                    </div>
+                    <span class="badge yellow">Скоро</span>
+                  </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">Первый в этом году Stand-Up</span>
+              </a>
+            </li>
+
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Birthday.png" alt="Birthday" />
+                <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">21 января</span>
+                      <span class="badge dark">Скидка 20%</span>
+                    </div>
+                    <span class="badge gray">Заверщено</span>
+                  </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">День рождения в «Гастроцех»</span>
+              </a>  
+            </li>
+          </ul>
+          <div class="card__footer_2">
+            <button class="card__btn_2">Все события</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция Наши заведения -->
+      <section class="section_our_units">
+        <div class="container">
+          <h2 class="section__title">Наши заведения</h2>
+          <ul class="cards__style-2">
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Food-court.png" alt="Food-court" />
+                 <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">Открыт еще 1 ч 20 мин</span>
+                      <span class="badge dark">с 10:00 до 23:00</span>
+                    </div>
+                    <span class="badge yellow">Открыт</span>
+                  </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">Фудкорт — Кафе «Гастроцех»</span>
+              </a>
+            </li>
+
+            <li class="card__style-2">
+              <a href="#" class="menu__card">
+                <img src="./images/Gastrotsekh_Pizza.png" alt="Gastrotsekh Pizza" />
+                <div class="event-badges">
+                    <div class="left-badges">
+                      <span class="badge dark">Открыт еще 1 ч 20 мин</span>
+                      <span class="badge dark">с 10:00 до 23:00</span>
+                    </div>
+                    <span class="badge yellow">Открыт</span>
+                  </div>
+                <span class="overlay" aria-hidden="true"></span>
+                <span class="label">«Гастроцех» Пицца</span>
+              </a>  
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      
+      <footer class="footer">
+        <div class="footer_top">
+          <div class="footer_contacts">
+            <p class="footer_phone">+0 (123) 456 78-90</p>
+            <p class="footer_time">Прием заказов с 10:00 до 22:40</p>
+          </div>
+          <div class="footer_socials">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/telegram.png" alt="Telegram"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/vk.png" alt="VK"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+        
+        <div class="footer_middle">
+              <a href="https://preax.ru"><img src="./images/footer_logo.png" alt="footer_logo" /> </a>
+
+        <nav class="footer_nav">
+          <ul>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Зоны доставки</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer_apps">
+              <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/appstore.png" alt="App Store"></a>
+              <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/googleplay.png" alt="Google Play"></a>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>Copyright 2024</p>
+        <div class="footer_info">
+          <a href="#">Условия оплаты, получения и возврата</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Согласие на обработку персональных данных</a>
+        </div>
+        <div class="footer_payments">
+          <img src="./images/visa.png" alt="visa">
+          <img src="./images/mastercard.png" alt="mastercard">
+          <img src="./images/mir.png" alt="mir">
+        </div>
+      </div>
+
+      <div class="footer_note">
+        <p>Проект выполнен в рамках стажировки <a href="https://preax.ru" target="_blank" rel="noopener noreferrer">PREAX</a></p>
+      </div>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+    
