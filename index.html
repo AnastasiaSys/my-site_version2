@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+      <script src="script.js"></script>
   </head>
 
   <body>
-    <div class="delivery-banner">
-      <p>Бесплатная доставка от 1000 ₽</p>
-      <span class="delivery-close">✖</span>
-    </div>
-
     <header class="header">
+      <div class="delivery-banner">
+        <p>Бесплатная доставка от 1 000 ₽</p>
+        <span class="delivery-close">✖</span>
+      </div>
+
       <div class="container header__container">
-              <a href="./"><img src="./images/Logo.png" alt="logo" /> </a>
+              <a href="#"><img src="./images/logo.svg" alt="logo" class="header-logo"/></a>
 
         <nav class="nav">
           <ul class="nav__list">
@@ -37,11 +37,11 @@
           <p class="time">Прием заказов с 10:00 до 22:40</p>
         </div>
          <div class="header__buttons">
-            <button class="header__btn">
-              <img src="./images/user.png" alt="Личный кабинет" />
+          <button class="header__btn">
+             <img src="./images/user.svg" alt="Личный кабинет" class="user">
             </button>
             <button class="header__btn">
-              <img src="./images/cart.png" alt="Корзина" />
+              <img src="./images/cart.svg" alt="Корзина" class="cart">
             </button>
           </div>
         </div>
@@ -313,23 +313,25 @@
           </ul>
         </div>
       </section>
+    </main>
 
       
       <footer class="footer">
+      <div class="container footer__container">
         <div class="footer_top">
           <div class="footer_contacts">
-            <p class="footer_phone">+0 (123) 456 78-90</p>
+            <a href="tel:+01234567890" class="footer_phone">+0 (123) 456 78-90</a>
             <p class="footer_time">Прием заказов с 10:00 до 22:40</p>
           </div>
           <div class="footer_socials">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/telegram.png" alt="Telegram"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/vk.png" alt="VK"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/telegram.svg" alt="Telegram"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/vk.svg" alt="VK"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
           </div>
         </div>
         
         <div class="footer_middle">
-              <a href="https://preax.ru"><img src="./images/footer_logo.png" alt="footer_logo" /> </a>
+              <a href="#"><img src="./images/logo.svg" alt="footer_logo" class="footer_logo" /> </a>
 
         <nav class="footer_nav">
           <ul>
@@ -342,31 +344,29 @@
         </nav>
 
         <div class="footer_apps">
-              <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/appstore.png" alt="App Store"></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><img src="./images/googleplay.png" alt="Google Play"></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="apps_link"><img src="./images/appstore.svg" alt="App Store"></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="apps_link"><img src="./images/googleplay.svg" alt="Google Play"></a>
         </div>
-      </div>
-
-      <div class="footer_bottom">
-        <p>Copyright 2024</p>
-        <div class="footer_info">
-          <a href="#">Условия оплаты, получения и возврата</a>
-          <a href="#">Политика обработки персональных данных</a>
-          <a href="#">Согласие на обработку персональных данных</a>
         </div>
-        <div class="footer_payments">
-          <img src="./images/visa.png" alt="visa">
-          <img src="./images/mastercard.png" alt="mastercard">
-          <img src="./images/mir.png" alt="mir">
-        </div>
-      </div>
-
-      <div class="footer_note">
-        <p>Проект выполнен в рамках стажировки <a href="https://preax.ru" target="_blank" rel="noopener noreferrer">PREAX</a></p>
+        
+        <div class="footer_bottom">
+          <p>Copyright 2024</p>
+          <div class="footer_info">
+            <a href="#">Условия оплаты, получения и возврата</a>
+            <a href="#">Политика обработки персональных данных</a>
+            <a href="#">Согласие на обработку персональных данных</a>
+          </div>
+            <div class="footer_payments">
+                <img src="./images/visa.svg" alt="visa">
+                <img src="./images/mastercard.svg" alt="mastercard">
+                <img src="./images/mir.svg" alt="mir">
+            </div>
+          </div>
+          <div class="footer_note">
+               <p>Проект выполнен в рамках стажировки <a href="https://preax.ru" target="_blank" rel="noopener noreferrer">PREAX</a></p>
+          </div>
       </div>
     </footer>
-    </main>
-    <script src="script.js"></script>
   </body>
 </html>
     

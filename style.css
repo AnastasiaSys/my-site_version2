@@ -24,19 +24,13 @@ body {
 .delivery-banner {
   background-color: #000;
   color: #fff;
-  text-align: center;
-  padding: 10px 16px;
   font-size: 18px;
-  font-weight: 500;
-  position: relative;
+  font-weight: 600;
   display: flex;
   align-items: center;
+  height: 48px;
   justify-content: center;
-  gap: 8px;
-}
-
-.delivery-banner p {
-  margin: 0;
+  gap: 12px;
 }
 
 .delivery-close {
@@ -69,13 +63,57 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
-  padding: 32px 62px;
+  height: 80px;
+  padding: 32px 64px;
+}
+
+.header-logo,
+.header__btn:hover .user,
+.header__btn:hover .cart {
+    filter: invert(1);
+}
+
+.user {
+  border-radius: 16px;
+  padding: 12px 18px;
+  border: 2px solid #000;
+   gap: 12px;
+  transition: all  0.2s ease;
+}
+
+.user:hover {
+  background-color: #E8E8E8;
+  border: 2px solid #E8E8E8;
+}
+
+.cart {
+  border-radius: 16px;
+  padding: 15px 18px;
+  background-color: #000;
+  transition: all  0.2s ease;
+}
+
+.cart:hover {
+  background-color: #000;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+.header__btn {
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+ 
 }
 
 .nav__list {
   display: flex;
-  gap: 32px;
+  gap: 24px;
   list-style: none;
   font-size: 16px;
 }
@@ -95,7 +133,7 @@ body {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 64px;
 }
 
 .header__info {
@@ -128,31 +166,6 @@ body {
   font-size: 12px;
 }
 
-.header__buttons {
-  display: flex;
-  gap: 12px;
-}
-
-.header__btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-   transition: transform 0.2s ease;
-}
-
-.header__btn:hover {
-  transform: scale(1.1);
-}
-
-
-.header__btn img {
-  width: 56px;
-  height: 48px;
-}
-
-
-
 /* MENU SECTION */
 .menu {
   padding: 32px 0;
@@ -166,7 +179,7 @@ body {
 
 .menu__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 0fr);
   gap: 32px;
 }
 
@@ -259,7 +272,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   gap: 4px;
 }
@@ -272,7 +284,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
@@ -297,12 +308,12 @@ body {
   width: 304px;
   font-size: 18px;
   font-family: "Inter", sans-serif;
-   transition: background-color 0.2s ease, transform 0.2s ease;
+   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .card__btn:hover {
-  background-color: hsl(0, 0%, 90%);
-  transform: scale(1.01);
+  background-color: #E8E8E8;
+  color: #393939;
 }
 
 /* === СЕКЦИИ: Акции, События и Наши заведения  === */
@@ -428,21 +439,23 @@ body {
   font-size: 18px;
   gap: 16px;
   font-family: "Inter", sans-serif;
- transition: background-color 0.2s ease,color 0.2s ease, transform 0.2s ease;
+ transition: background-color 0.2s ease,color 0.2s ease;
 }
 
 .card__btn_2:hover {
   background-color: #000;
   color: #fff;
-  transform: scale(1.01);
 }
 
 .footer{
-  background: #000;
+  width: 100%;
+  background: #1C1C1C;
   color: #A6A6A6;
-  padding: 32px 64px;
   gap: 32px;
- 
+}
+
+.footer__container {
+  padding: 32px 62px;
 }
 
 .footer_top{
@@ -451,17 +464,11 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 56px;
-  padding: 0 32px;
-  gap: 8px;
- transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.footer_top :hover {
-  transform: scale(1.01);
-  opacity: 0.9;
+  margin-bottom: 32px;
 }
 
 .footer_phone{
+  text-decoration: none;
   color: #F4F4F4;
   font-size: 24px;
   font-weight: 600;
@@ -477,27 +484,51 @@ body {
   margin: 4px 0 0;
 }
 
-.footer_socials a img {
-  width: 40px;
+.footer_socials {
+  display: flex;
+  justify-content: center; 
+  gap: 8px; 
+  
+}
+
+.footer_socials a {
+  display: inline-flex;        
+  align-items: center;
+  justify-content: center;
+  width: 40px;                   
   height: 40px;
-  margin-left: 10px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
+  background-color: #393939;     
+  border-radius: 8px;           
+               
+}
+
+.footer_socials a img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease;
 }
 
 .footer_socials a:hover img {
-  opacity: 1;
+  filter: brightness(1.6);
 }
+
 
 .footer_middle{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 32px 0;
-  padding: 32px;
   height: 40px;
-  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.footer_logo{
+  margin-right: 144px;
+  transition: all 0.2s ease;
+}
+
+.footer_logo:hover{
+    filter: invert(0.4);
 }
 
 
@@ -506,6 +537,7 @@ body {
   gap: 32px;
   list-style: none;
   font-size: 16px;
+  margin: 0 64px;
 }
 
 .footer_nav a {
@@ -520,20 +552,26 @@ body {
   color: #A6A6A6;
 }
 
-.footer_apps img{
-  padding-right: 8px;
+.footer_apps{
+  display: flex;
+  gap: 8px; 
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_apps  a img {
+.apps_link {
+  position: relative;
+  display: inline-block;
+  width: 138px;
   height: 40px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-  gap: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
 }
 
-.footer_apps a:hover img {
-  opacity: 1;
+.apps_link:hover{
+    filter: brightness(1.6);
 }
+
 
 .footer_bottom{
   display: flex;
@@ -541,10 +579,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 29px;
-  margin: 32px 0;
-  padding: 32px;
-  
+  margin-bottom: 32px;
+  font-size: 14px;
 }
+
+
 
 .footer_info{
   display: flex;
@@ -563,26 +602,27 @@ body {
   color: #fafafa;
 }
 
+.footer_payments {
+  display: flex;
+  justify-content: center; 
+  gap: 8px; 
+}
+
 .footer_payments img {
   height: 29px;
   gap: 8px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-  padding-right: 8px;
-  
 }
 
-.footer_payments img:hover {
-  opacity: 1;
-}
 
 .footer_note {
-  border-top: 1px solid #2a2a2a;
+  border-top: 1px solid #393939;
   text-align: center;
-  padding: 32px;
   font-size: 14px;
-  margin: 32px;
+  padding: 32px;
+  padding-bottom: 0;
+ 
 }
+ 
 
 .footer_note a {
   color: #A6A6A6;

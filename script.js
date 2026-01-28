@@ -1,4 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Пока здесь пусто, т.к. по макету JS для футера не требуется
-  // Но файл подключён согласно требованиям задания
+document.addEventListener("DOMContentLoaded", function() {
+  const banner = document.querySelector(".delivery-banner");
+  const closeBtn = document.querySelector(".delivery-close");
+
+  if (banner && closeBtn) {
+    closeBtn.addEventListener("click", function() {
+      banner.style.display = "none";
+    });
+  }
 });
+
